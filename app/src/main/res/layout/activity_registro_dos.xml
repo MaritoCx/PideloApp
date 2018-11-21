@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEBEB"
+    tools:context=".Admin.RegistroDOS">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/celeste"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/register"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/enterEdata"
+                android:textColor="#000000" />
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/btn_help"/>
+
+        </LinearLayout>
+
+        <!--<TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/name"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:verticalScrollbarPosition="defaultPosition">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtDir"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="Direccion de la empresa"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <EditText
+                    android:id="@+id/txtNIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="NIT"
+                    android:inputType="number|phone"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <EditText
+                    android:id="@+id/txtUsser"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="Nombre de la empresa"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <EditText
+                    android:id="@+id/txtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="Telefono"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="Correo electronico"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <EditText
+                    android:id="@+id/txtEmailE"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="Correo electronico empresarial"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <EditText
+                    android:id="@+id/txtRep"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="Nombre del representante"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <EditText
+                    android:id="@+id/txtPhoneE"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="8"
+                    android:hint="Telefono empresarial"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:theme="@style/CampoTextoCelesteSmall" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:ems="8"
+                        android:hint="12:00"
+                        android:inputType="datetime"
+                        android:padding="8dp"
+                        android:textAlignment="center"
+                        android:theme="@style/CampoTextoCelesteSmall"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/editText2"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:ems="8"
+                        android:hint="24:00"
+                        android:inputType="datetime"
+                        android:padding="8dp"
+                        android:textAlignment="center"
+                        android:theme="@style/CampoTextoCelesteSmall"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/ckbConditions"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:theme="@style/CampoTextoCeleste" />
+
+                    <TextView
+                        android:id="@+id/txtConditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/conditions"
+                        android:theme="@style/URL" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/btnAcept"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_acept"
+            android:text="@string/acept"
+            android:textStyle="italic|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        <!-- <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/name"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+-->
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

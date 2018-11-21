@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PideloApp</string>
+    <string name="login">Inicio de sesion</string>
+    <string name="user">Usuario:</string>
+    <string name="password">Contraseña:</string>
+    <string name="acept">Aceptar</string>
+    <string name="forget">¿Olvido su contraseña?</string>
+    <string name="forgetTitle">Cambio de constraseña</string>
+    <string name="email">Correo electronico:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ElegirTipoResAdm">Elija una opcion o agregue una</string>
+    <string name="register">Registro</string>
+    <string name="name">Nombre:</string>
+    <string name="conditions">He leido y acepto los terminos y condiciones</string>
+    <string name="enterEdata">Ingrese los siguientes datos</string>
+    <string name="menu">Agregar menu</string>
+    <string name="producto">Productos</string>
+    <string name="combo">Combos</string>
+    <string name="ElegirTipoResCli">Elije la opcion de tu preferencia</string>
+    <string name="ElegirRes">Elije a quien ordenar</string>
+    <string name="Elegir">¿Que deseas ordenar?</string>
+
+
+</resources>
